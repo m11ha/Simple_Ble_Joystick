@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Help</title>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+	<h1>Description </h1>
+</header>
+<main>
+	<p >
+		The "Simple BLE joystick" is designed to remotely control
+		of a makeshift robot. A Bluetooth LE module is used as a receiver
+		on the CC2541 chip - e.g. AT-09, MLT-BT05, HM-10, etc.<span class="ahtung">The program is not
+		designed to work with legacy Bluetooth.</span>
+	</p>
+	<h2>Possible scheme for connecting the module to the Arduino</h2>
+	<figure class="shema">
+		<img src="images/sx1.png">
+	</figure>
+	<h2>Controls</h2>
+	<p>
+		The software sends ASCII characters over the radio channel, which are interpreted as commands by the controlled device.
+		A '0' is sent when the button is released.
+	</p>
+	<p>
+		<img src="images/j1.png" class="ctr"> <span>Joystick 1.</span>
+		Mimics a conventional eight-way joystick:
+		<p>
+			Default settings:
+		</p>
+		<ul>
+			<li><span class="cmd">a</span> Forward</li>
+			<li><span class="cmd">b</span> Right</li>
+			<li><span class="cmd">c</span> Backward</li>
+			<li><span class="cmd">d</span> Left</li>
+			<li><span class="cmd">k</span> Forward to right</li>
+			<li><span class="cmd">l</span> Back to right</li>
+			<li><span class="cmd">m</span> Back to left</li>
+			<li><span class="cmd">n</span> Forward to left</li>
+		</ul>
+
+	</p>
+<p>
+		<img src="images/j2.png" class="ctr"> <span>Joystick 2.</span>
+	    Just four buttons.
+		<p>
+		Default settings:
+		</p>
+		<ul>
+			<li><span class="cmd">A</span> Forward</li>
+			<li><span class="cmd">B</span> Right</li>
+			<li><span class="cmd">C</span> Backward</li>
+			<li><span class="cmd">D</span> Left</li>
+		</ul>
+
+	</p>
+	<p>
+		<img src="images/udkeys.png" class="ctr"> <span>Nine extra buttons - just in case.</span>
+		<p>
+			The default values are "1" to "9".
+		</p>
+	</p>
+	<p>
+		All values can be overridden in the settings screen. <img src="images/setup.png" class="ctr">
+		Here you can also change the service UUID and characteristics of the device to be controlled, and swap joystick 1 and 2.
+		<span	class="ahtung">It is best not to change the UUID unnecessarily.</span>
+	</p>
+	<p>
+		<img src="images/save.png" class="ctr"> -save settings
+		<img src="images/reset.png" class="ctr"> -reset.
+	</p>
+
+	<h2>Connecting</h2>
+
+	<p>
+		The search for available devices starts automatically when you go to the scanner
+		screen	<img src="images/devices.png" class="ctr">, the current connection is reset.
+		By clicking on the device found, you can try to connect to it. If unsuccessful
+		failed to connect or scan, try again. The scan lasts for 5 seconds and can be aborted.
+	</p>
+	<P>
+		If the service UUID or device specification differs from that specified in the settings, the connection may occur, but it <span class="ahtung"> will reset when you go to the control screen.</span>
+
+	</p>
+
+</main>
+
+</body>
+</html>

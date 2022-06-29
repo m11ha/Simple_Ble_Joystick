@@ -1,0 +1,62 @@
+body {
+	background-color: lightgray;
+}
+header{
+	max-width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	
+
+
+}
+main{
+	max-width: 80%;
+	margin: 0 auto;
+	background-color: white;
+}
+h1,h2,h3{
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	line-height: 2;
+}
+
+h1{
+	font-size: x-large;
+}
+h2{
+	font-size: large;
+}
+h3{
+	font-size: medium;
+}
+
+p,ul{
+	display: block;
+	margin-left: 20pt;
+	margin-right: 20pt;
+	font-size: 110%;
+}
+figure{
+	display: block;
+	padding-left: 15% ;
+
+}
+figure.shema img{
+	display: block;
+	max-width: 90%;
+	
+}
+img.ctr{
+	display: inline-block;
+	width: 50pt;
+	height: 50pt;
+	vertical-align: middle;
+}
+.ahtung{
+	font-style: italic;
+	color: red;
+}
+.cmd{
+	font-weight: bold ;
+}

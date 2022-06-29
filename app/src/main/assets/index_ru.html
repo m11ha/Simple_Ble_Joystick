@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header>
+    <h1>Описание</h1>
+</header>
+<main>
+    <p >
+        "Простой BLE джойстик" предназначен для дистанционного управления
+        самодельным роботом. В качестве приемника используется Bluetooth LE модуль
+        на чипе CC2541 - например, AT-09, MLT-BT05, HM-10 и тд.<span class="ahtung"> Программа не
+		предназначена для работы с классическим Bluetooth.</span>
+    </p>
+    <h2>Возможная схема подключения модуля к Arduino</h2>
+    <figure class="shema">
+        <img src="images/sx1.png">
+    </figure>
+    <h2>Элементы управления</h2>
+    <p>
+        Программа посылает по радио - каналу ASCII символы, которые
+        интерпретируются управляемым устройством как команды.
+        При отпускании кнопки посылается символ "0".
+    </p>
+    <p>
+        <img src="images/j1.png" class="ctr"> <span>Джойстик 1.</span>
+        Имитирует обычный джойстик на 8 направлений:
+    <p>
+        Значения по умолчанию:
+    </p>
+    <ul>
+        <li><span class="cmd">a</span> Вперед</li>
+        <li><span class="cmd">b</span> Вправо</li>
+        <li><span class="cmd">c</span> Назад</li>
+        <li><span class="cmd">d</span> Влево</li>
+        <li><span class="cmd">k</span> Вперед-направо</li>
+        <li><span class="cmd">l</span> Назад-направо</li>
+        <li><span class="cmd">m</span> Назад-влево</li>
+        <li><span class="cmd">n</span> Вперед-влево</li>
+    </ul>
+
+    </p>
+    <p>
+        <img src="images/j2.png" class="ctr"> <span>Джойстик 2.</span>
+        Просто четыре кнопки.
+    <p>
+        Значения по умолчанию:
+    </p>
+    <ul>
+        <li><span class="cmd">A</span> Вперед</li>
+        <li><span class="cmd">B</span> Вправо</li>
+        <li><span class="cmd">C</span> Назад</li>
+        <li><span class="cmd">D</span> Влево</li>
+    </ul>
+
+    </p>
+    <p>
+        <img src="images/udkeys.png" class="ctr"> <span>Девять дополнительных кнопок -
+		на всякий случай.</span>
+    <p>
+        По умолчанию - значения от "1" до "9".
+    </p>
+    </p>
+    <p>
+        Все значения можно переопределить на экране настроек <img src="images/setup.png" class="ctr">
+        Здесь же можно изменить UUID сервиса и характеристики управляемого устройства, а также поменять местами джойстик 1 и 2.	<span	class="ahtung">UUID без необходимости
+		лучше не менять.</span>
+    </p>
+    <p>
+        <img src="images/save.png" class="ctr"> -сохранить настройки
+        <img src="images/reset.png" class="ctr"> -сбросить.
+    </p>
+
+    <h2>Подключение</h2>
+
+    <p>
+        Поиск доступных устройств начинается автоматически при переходе на экран
+        сканера	<img src="images/devices.png" class="ctr">, при этом текущее соединение сбрасывается.
+        Кликнув по найденному устройству, можно попытаться к нему подключиться. При неудачном
+        сканировании или подключении, повторите попытку. Сканирование продолжается 5 секунд
+        и может быть прервано.
+    </p>
+    <P>
+        Если UUID сервиса или характеристики устройства отличается от заданного в настройках, подключение	может произойти, но оно <span class="ahtung"> сбросится при переходе на экран управления.</span>
+
+    </p>
+
+</main>
+
+</body>
+</html>

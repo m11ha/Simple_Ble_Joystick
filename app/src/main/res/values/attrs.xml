@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myJoistik">
+        <attr name="butColor" format="color"/>
+        <attr name="butPressedColor" format="color"/>
+        <attr name="butReleasedColor"  format="color"/>
+        <attr name="butBrdColor" format="color"/>
+        <attr name="brdColor" format="color"/>
+        <attr name="bkgrColor" format="color"/>
+        <attr name="butSizeMultipler" format="fraction"/>
+        <attr name="bkgrdSizeMultipler" format="fraction" />
+        <attr name="innerSizeMultipler" format="fraction"/>
+        <attr name="outerSizeMultipler" format="fraction"/>
+        <attr name="enable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

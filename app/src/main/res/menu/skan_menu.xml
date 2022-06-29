@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bleDevices"
+        android:icon="@drawable/ble_devices"
+        android:title="@string/ble_devices"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/back"
+        android:icon="@drawable/back"
+        android:title="@string/back"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/save"
+        android:title="@string/save"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/restore"
+        android:icon="@drawable/settinds_back"
+        android:title="@string/restore"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="@string/help"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+</menu>

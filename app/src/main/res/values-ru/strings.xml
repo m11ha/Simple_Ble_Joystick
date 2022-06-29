@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Простой Ble джойстик</string>
+    <string name="left">Влево</string>
+    <string name="right">Вправо</string>
+    <string name="skanning">Сканировать</string>
+    <string name="ble_devices">BLE уцтройства</string>
+    <string name="settings">Установки</string>
+    <string name="commandSetLabel">Установка команд</string>
+    <string name="lt_lt"><![CDATA[<<]]></string>
+    <string name="forwardLabel">Вперед</string>
+    <string name="rightLabel">Направо</string>
+    <string name="backwardLabel">Назад</string>
+    <string name="leftLabel">Влево</string>
+    <string name="forwRightLabel">Вперед-направо</string>
+    <string name="bckwRightLabel">Назад-направо</string>
+    <string name="forwLeftLabel">Вперед-влево</string>
+    <string name="backwardLeft">Назад-влево</string>
+
+    <string name="joystickLabel_1">Джойстик 1</string>
+
+    <string name="saveLabel">Сохранить</string>
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+    <string name="restore">Восстановить</string>
+    <string name="nodevices">Доступные устройства отсуствуют</string>
+    <string name="scan">Сканировать</string>
+    <string name="interrupt">Прервать</string>
+    <string name="backBtnTitle">Назад</string>
+    <string name="help">Справка</string>
+    <string name="unconnected">Отключено</string>
+    <string name="connected">Подключено</string>
+    <string name="disconnected">Отключено</string>
+    <string name="connErr">Сбой подключения</string>
+    <string name="uButtonsLabel">Кнопки</string>
+    <string name="joystickLabel2">Джойстик 2</string>
+    <string name="flip_joystickLabel">Отзеркалить джойстики</string>
+    <string name="discreet_commands">Режим дискретных команд</string>
+    <string name="angle_speed">Поворот-скорость</string>
+    <string name="uuid_label">Изменить</string>
+    <string name="help_url">file:///android_asset/index_ru.html</string>
+</resources>
